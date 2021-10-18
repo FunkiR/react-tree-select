@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component renders component 1`] = `<div />`;
+
+exports[`Container component renders correctly 1`] = `<div />`;

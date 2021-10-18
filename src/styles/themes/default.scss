@@ -1,0 +1,135 @@
+@import "src/styles/variables.scss";
+
+.Icon {
+	align-items: center;
+	display: inline-flex;
+	color: grey;
+	cursor: pointer;
+	background-color: transparent;
+	border-radius: 50%;
+	justify-content: center;
+	height: 24px;
+	width: 24px;
+
+	&:hover {
+		color: darkgrey;
+	}
+
+	&:active {
+		color: dimgray;
+	}
+}
+
+.SearchInputContainer {
+	display: flex;
+	padding: 12px 8px;
+}
+
+.SearchInput {
+	border: none;
+	border-bottom: 2px solid lightgray;
+	flex: auto;
+	outline: none;
+	margin-left: 12px;
+
+	&:focus {
+		border-bottom: 2px solid deepskyblue;
+	}
+}
+
+.TreeContainer {
+	overflow: auto;
+	min-height: 50px;
+	max-height: 300px;
+}
+
+.NodeContainer {
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-bottom: 2px;
+}
+
+.NodeLabelContainer {
+	align-items: center;
+	display: flex;
+	height: 30px;
+}
+
+.NodeLabel {
+	cursor: pointer;
+	padding: 4px 8px;
+	flex: auto;
+
+	&:hover {
+		background-color: lightgray;
+	}
+}
+
+.NodeLabel_found {
+	font-weight: bold;
+}
+
+.NodeLabel_selected {
+	background-color: $dark-grey;
+}
+
+.NodeExpandIconContainer {
+	padding: 2px;
+	min-width: 24px;
+	text-align: center;
+}
+
+.NodeChildrenContainer {
+	margin-left: 20px;
+}
+
+.SelectContainer {
+	position: relative;
+}
+
+.MenuContainer {
+	background-color: white;
+	border: 1px solid $grey;
+	border-radius: 0 2px 2px 0;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px $grey;
+	padding: 4px;
+	position: absolute;
+	left: 0;
+	top: calc(100% + 5px);
+	width: 100%;
+}
+
+.ValueContainer {
+	background-color: white;
+	border: 1px solid $grey;
+	border-radius: 2px;
+	box-sizing: border-box;
+	display: flex;
+	height: 42px;
+	justify-content: center;
+	padding: 8px 10px;
+	max-width: 100%;
+
+	&:hover {
+		.IndicatorsContainer {
+			visibility: visible;
+		};
+	}
+}
+
+.ValueLabel {
+	flex: auto;
+	margin: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-wrap: none;
+}
+
+.IndicatorsContainer {
+	visibility: hidden;
+}
+
+.ClearIcon {
+	margin-right: 5px;
+}

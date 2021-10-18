@@ -1,0 +1,33 @@
+{
+	"presets": [
+		"@babel/preset-typescript",
+		"@babel/preset-react",
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"browsers": ["last 3 versions"],
+					"node": "current"
+				}
+			}
+		]
+	],
+	"plugins": [
+		"dynamic-import-node",
+		"@babel/plugin-proposal-optional-chaining",
+		"@babel/plugin-proposal-object-rest-spread",
+		"@babel/plugin-syntax-dynamic-import",
+		"@babel/plugin-transform-react-jsx-source",
+		["@babel/plugin-transform-runtime",
+			{
+				"regenerator": true
+			}
+		],
+		["transform-imports", {
+			"@fortawesome/free-solid-svg-icons": {
+				"transform": "@fortawesome/free-solid-svg-icons/${member}",
+				"skipDefaultConversion": true
+			}
+		}]
+	]
+}

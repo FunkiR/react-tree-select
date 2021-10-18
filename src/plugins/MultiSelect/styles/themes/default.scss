@@ -1,0 +1,63 @@
+@import "src/styles/index.scss";
+
+:local {
+	.TagsContainer {
+		display: flex;
+		flex: auto;
+	}
+
+	.TagContainer {
+		box-sizing: border-box;
+		padding-right: 5px;
+	}
+
+	.Tag {
+		align-items: center;
+		display: flex;
+		border-radius: 10px;
+		background-color: $grey;
+		box-sizing: border-box;
+		cursor: pointer;
+		justify-content: space-between;
+		height: 24px;
+		padding: 4px 8px;
+
+		&:hover {
+			background-color: $dark-grey;
+		}
+	}
+
+	.ValueTag {
+		@extend .Tag !optional;
+
+		justify-content: space-between;
+	}
+
+
+	.ShowAllTagsTag {
+		@extend .Tag !optional;
+
+		justify-content: center;
+	}
+
+	.AllTagsContainer {
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid $grey;
+		border-radius: 4px;
+		position: absolute;
+		bottom: calc(100% + 5px);
+		left: 0;
+		right: 0;
+
+		> :nth-child(n) {
+			padding: 5px;
+		}
+	}
+
+	.ValueTagLabel {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}

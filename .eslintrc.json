@@ -1,0 +1,86 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:promise/recommended",
+		"plugin:jsdoc/recommended",
+		"plugin:import/typescript"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": [
+		"@babel",
+		"@typescript-eslint",
+		"import",
+		"sort-destructure-keys",
+		"react",
+		"promise",
+		"simple-import-sort"
+	],
+	"rules": {
+		"curly": "off",
+		"indent": ["error", "tab"],
+		"object-curly-spacing": ["error", "never"],
+		"no-param-reassign": "error",
+		"no-tabs": "off",
+		"operator-linebreak": ["error", "before"],
+		"react/jsx-tag-spacing": ["error", {
+			"beforeSelfClosing": "always"
+		}],
+		"react/jsx-sort-props": "error",
+		"require-atomic-updates": "off",
+		"@babel/semi": ["error", "always"],
+		"sort-destructure-keys/sort-destructure-keys": ["error", {
+			"caseSensitive": true
+		}],
+		"sort-vars": ["error", {
+			"ignoreCase": false
+		}],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"jsdoc/newline-after-description": "error",
+		"import/no-relative-parent-imports": "error",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"quotes": ["error", "double"],
+		"semi": "off",
+		"@typescript-eslint/semi": ["error"],
+		"@typescript-eslint/ban-types": ["error",
+			{
+				"types": {
+					"Function": false
+				},
+				"extendDefaults": true
+			}
+		],
+		"@typescript-eslint/no-var-requires": "off",
+		"@typescript-eslint/quotes": ["error", "double"]
+	},
+	"overrides": [
+		{
+			"files": ["src/**/*"],
+			"rules": {
+				"react/prop-types": "off",
+				"react/display-name": "off"
+			}
+		}
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}

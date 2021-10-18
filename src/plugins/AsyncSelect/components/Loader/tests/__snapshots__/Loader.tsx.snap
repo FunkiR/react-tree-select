@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[AsyncSelect] Loader component renders component 1`] = `
+<div
+  className=""
+  style={
+    Object {
+      "height": 25,
+      "width": 25,
+    }
+  }
+/>
+`;
+
+exports[`Loader Component renders correctly 1`] = `
+<div
+  className=""
+  style={
+    Object {
+      "height": 25,
+      "width": 25,
+    }
+  }
+/>
+`;

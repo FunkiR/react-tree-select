@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Value component renders correctly 1`] = `
+<Memo(ForwardRef)
+  className="ValueContainer"
+>
+  <Memo(ForwardRef)
+    className="ValueLabel"
+    title=""
+  />
+  <Memo(ForwardRef)
+    className="IndicatorsContainer"
+  >
+    <Memo(Icon)
+      className=""
+      icon={
+        Object {
+          "icon": Array [],
+          "iconName": "caret-down",
+          "prefix": "fas",
+        }
+      }
+      onClick={[Function]}
+    />
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;

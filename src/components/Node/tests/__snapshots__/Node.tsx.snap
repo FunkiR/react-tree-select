@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Node component renders correctly with children and when "expanded" prop changes expanded is false 1`] = `
+<Memo(ForwardRef)
+  className="NodeContainer"
+>
+  <Memo(ForwardRef)
+    className="NodeLabelContainer"
+  >
+    <Memo(ForwardRef)
+      className="NodeExpandIconContainer"
+    >
+      <Memo(Icon)
+        icon={
+          Object {
+            "icon": Array [],
+            "iconName": "plus-square",
+            "prefix": "fas",
+          }
+        }
+        onClick={[Function]}
+      />
+    </Memo(ForwardRef)>
+    <Memo(ForwardRef)
+      className="NodeLabel"
+      onClick={[Function]}
+      title="label"
+    >
+      label
+    </Memo(ForwardRef)>
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;
+
+exports[`Node component renders correctly with children and when "expanded" prop changes expanded is true 1`] = `
+<Memo(ForwardRef)
+  className="NodeContainer"
+>
+  <Memo(ForwardRef)
+    className="NodeLabelContainer"
+  >
+    <Memo(ForwardRef)
+      className="NodeExpandIconContainer"
+    >
+      <Memo(Icon)
+        icon={
+          Object {
+            "icon": Array [],
+            "iconName": "minus-square",
+            "prefix": "fas",
+          }
+        }
+        onClick={[Function]}
+      />
+    </Memo(ForwardRef)>
+    <Memo(ForwardRef)
+      className="NodeLabel"
+      onClick={[Function]}
+      title="label"
+    >
+      label
+    </Memo(ForwardRef)>
+  </Memo(ForwardRef)>
+  <Memo(ForwardRef)
+    className="NodeChildrenContainer"
+  >
+    <Node
+      data={
+        Object {
+          "children": Array [],
+          "label": "child1",
+          "value": "child1",
+        }
+      }
+      expanded={false}
+      found={false}
+      hasChildren={false}
+      key="child1"
+      label="child1"
+      onClick={[MockFunction]}
+      onExpand={[MockFunction]}
+      selected={false}
+    >
+      <Component />
+    </Node>
+    <Node
+      data={
+        Object {
+          "children": Array [],
+          "label": "child2",
+          "value": "child2",
+        }
+      }
+      expanded={false}
+      found={false}
+      hasChildren={false}
+      key="child2"
+      label="child2"
+      onClick={[MockFunction]}
+      onExpand={[MockFunction]}
+      selected={false}
+    >
+      <Component />
+    </Node>
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;
+
+exports[`Node component renders correctly without children 1`] = `
+<Memo(ForwardRef)
+  className="NodeContainer"
+>
+  <Memo(ForwardRef)
+    className="NodeLabelContainer"
+  >
+    <Memo(ForwardRef)
+      className="NodeExpandIconContainer"
+    />
+    <Memo(ForwardRef)
+      className="NodeLabel"
+      onClick={[Function]}
+      title="label"
+    >
+      label
+    </Memo(ForwardRef)>
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;
+
+exports[`Node component renders with children when "expanded" prop changes expanded is false 1`] = `
+<Memo(ForwardRef)
+  className="NodeContainer"
+>
+  <Memo(ForwardRef)
+    className="NodeLabelContainer"
+  >
+    <Memo(ForwardRef)
+      className="NodeExpandIconContainer"
+    >
+      <Memo(Icon)
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [],
+              "f0fe",
+              "M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-32 252c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92H92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z",
+            ],
+            "iconName": "plus-square",
+            "prefix": "fas",
+          }
+        }
+        onClick={[Function]}
+      />
+    </Memo(ForwardRef)>
+    <Memo(ForwardRef)
+      className="NodeLabel"
+      onClick={[Function]}
+      title="label"
+    >
+      label
+    </Memo(ForwardRef)>
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;
+
+exports[`Node component renders with children when "expanded" prop changes expanded is true 1`] = `
+<Memo(ForwardRef)
+  className="NodeContainer"
+>
+  <Memo(ForwardRef)
+    className="NodeLabelContainer"
+  >
+    <Memo(ForwardRef)
+      className="NodeExpandIconContainer"
+    >
+      <Memo(Icon)
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [],
+              "f146",
+              "M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM92 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H92z",
+            ],
+            "iconName": "minus-square",
+            "prefix": "fas",
+          }
+        }
+        onClick={[Function]}
+      />
+    </Memo(ForwardRef)>
+    <Memo(ForwardRef)
+      className="NodeLabel"
+      onClick={[Function]}
+      title="label"
+    >
+      label
+    </Memo(ForwardRef)>
+  </Memo(ForwardRef)>
+  <Memo(ForwardRef)
+    className="NodeChildrenContainer"
+  >
+    <Node
+      data={
+        Object {
+          "children": Array [],
+          "label": "child1",
+          "value": "child1",
+        }
+      }
+      expanded={false}
+      found={false}
+      hasChildren={false}
+      key="child1"
+      label="child1"
+      onClick={[MockFunction]}
+      onExpand={[MockFunction]}
+      selected={false}
+    >
+      <Component />
+    </Node>
+    <Node
+      data={
+        Object {
+          "children": Array [],
+          "label": "child2",
+          "value": "child2",
+        }
+      }
+      expanded={false}
+      found={false}
+      hasChildren={false}
+      key="child2"
+      label="child2"
+      onClick={[MockFunction]}
+      onExpand={[MockFunction]}
+      selected={false}
+    >
+      <Component />
+    </Node>
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;
+
+exports[`Node component renders without children 1`] = `
+<Memo(ForwardRef)
+  className="NodeContainer"
+>
+  <Memo(ForwardRef)
+    className="NodeLabelContainer"
+  >
+    <Memo(ForwardRef)
+      className="NodeExpandIconContainer"
+    />
+    <Memo(ForwardRef)
+      className="NodeLabel"
+      onClick={[Function]}
+      title="label"
+    >
+      label
+    </Memo(ForwardRef)>
+  </Memo(ForwardRef)>
+</Memo(ForwardRef)>
+`;
